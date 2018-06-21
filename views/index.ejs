@@ -34,7 +34,7 @@ function onButtonClick() {
 		  var data = message_arr;
 
 		  (function(){
-		  　　　　socket = io.connect("http://localhost:8888");
+		  　　　　socket = io.connect("http://localhost:45555");
 		  　　　　socket.emit("my", {value:data,vi:'<%=login.name  %>'});
 		  })();
 }
@@ -83,7 +83,7 @@ function onButtonClick() {
     </div>
 
 		 <script type="text/javascript">
-		socket = io.connect("http://localhost:8888");
+		socket = io.connect("http://localhost:45555");
 
         //var socket = io.connect(); // C02. ソケットへの接続
         var isEnter = false;
